@@ -4,21 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora JS</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif; 
+        }
+        .container {
+            background-color: #ffffff; 
+            width: 450px;
+            height: 500px;
+            margin: 50px auto;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        }
+        .container input {
+            border-radius: 5px;
+            width: 70%;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color:#ccc;
+            font-size: 16px;
+            border-radius: 16PX;
+        }
+        .container button {
+            width: 150px;
+            height: 50px;
+            margin: 5px;
+            background-color: #30af61; 
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .container button:nth-child(3){
+            margin-right: 0;
+        }
+        .container button:hover {
+            background-color:#e01010; 
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Calculadora</h1>
-        <input type="text" name="" id="num1">
+        <input type="text" name="" id="num1" placeholder="0">
         <br>
-        <input type="text" name="" id="num1">
+        <input type="text" name="" id="num2" placeholder="0">
         <br>
-        <input type="text" name="" id="num1">
+        <input type="text" name="" id="result" placeholder="0" disabled >
         <br>
-        <button onclick="">Suma</button>
-        <button onclick="">Resta</button>
-        <button onclick="">Multiplicacion</button>
-        <button onclick="">Divicion</button>
-        <button onclick="">Limpiar</button>
+        <button onclick="sumar()">Suma</button>
+        <button onclick="restar()">Resta</button>
+        <button onclick="multiplicar()">Multiplicación</button>
+        <button onclick="dividir()">División</button>
+        <button onclick="limpiar()">Limpiar</button>
 
     </div>
     <script src="./calculadora.js"></script>
